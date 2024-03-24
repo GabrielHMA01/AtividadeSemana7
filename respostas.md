@@ -341,9 +341,6 @@ inicioalgoritmo
         tempoVolta <- tempoEmMRUV + tempoEmMRU
     fimenquanto
 fimalgoritmo
-    
-
-fimalgoritmo
 ```
 ______
 
@@ -373,4 +370,29 @@ matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
 Escrever("Soma das matrizes:")
 ImprimirMatriz(matrizSoma)
+```
+
+```
+Algoritmo "Multiplicando Matrizes"
+
+inicioalgoritmo
+   variavel matrizA[i][j] <- [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+   variavel matrizB[i][j] <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+   se (matrizA[j] diferente matrizB[i]) entao
+        imprima ("Não é pssível multiplicar essas matrizes, pois o número de colunas da matriz A é diferende do número de linhas da matriz B")
+    fimse
+    senaose(matrizA[j] = matrizB[i]) entao
+        inicializar a matrizC[m][p]
+            para i ← 1 até m
+                para j ← 1 até p
+                        para k ← 1 até n
+                            C[i][j] ← C[i][j] + A[i][k] × B[k][j]
+                        fim_para
+                fim_para
+            fim_para
+        retorne C[m][p]
+        imprima("A matriz resultante da multiplicação de A e B é C[m][p]")
+    fimsenaose  
+fimalgoritmo
 ```
