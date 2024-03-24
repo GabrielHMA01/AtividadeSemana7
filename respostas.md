@@ -380,7 +380,7 @@ inicioalgoritmo
    variavel matrizB[i][j] <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 
    se (matrizA[j] diferente matrizB[i]) entao
-        imprima ("Não é pssível multiplicar essas matrizes, pois o número de colunas da matriz A é diferende do número de linhas da matriz B")
+        imprima ("Não é possível multiplicar essas matrizes, pois o número de colunas da matriz A é diferende do número de linhas da matriz B")
     fimse
     senaose(matrizA[j] = matrizB[i]) entao
         inicializar a matrizC[m][p]
